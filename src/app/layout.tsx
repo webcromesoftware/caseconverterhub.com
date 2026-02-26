@@ -1,3 +1,4 @@
+import Script from 'next/script'
 import React from 'react';
 import type { Metadata, Viewport } from 'next';
 import '../styles/index.css';
