@@ -50,7 +50,7 @@ export default function RootLayout({
         </SecurityWrapper>
 
 
-        {/* Google Analytics */}
+{/* Google Analytics */}
 <Script
   strategy="afterInteractive"
   src="https://www.googletagmanager.com/gtag/js?id=G-RE62PC2MM5"
@@ -66,6 +66,7 @@ export default function RootLayout({
       gtag('config', 'G-RE62PC2MM5');
     `,
   }}
+/>
       </body>
     </html>
   );
