@@ -101,20 +101,7 @@ export default function HeroSection() {
           lower case, Title Case, camelCase and 6 more — in one click.
         </p>
 
-        {/* ── The Tool ── */}
-        <div
-          id="converter-tool"
-          className="animate-fade-in-up delay-300"
-          style={{
-            background: "var(--color-surface)",
-            borderRadius: "var(--radius-xl)",
-            padding: "clamp(20px, 4vw, 40px)",
-            boxShadow: "var(--shadow-tool)",
-            border: "1px solid var(--color-border)",
-            position: "relative",
-          }}
-        >
-          {/* Tool header */}
+         {/* Tool header */}
           <div className="flex items-center justify-between mb-5">
             <div className="flex items-center gap-2">
               {/* Traffic light dots */}
@@ -147,6 +134,21 @@ export default function HeroSection() {
           <CaseConverterTool />
         </div>
       </div>
+
+        {/* ── The Tool ── */}
+        <div
+          id="converter-tool"
+          className="animate-fade-in-up delay-300"
+          style={{
+            background: "var(--color-surface)",
+            borderRadius: "var(--radius-xl)",
+            padding: "clamp(20px, 4vw, 40px)",
+            boxShadow: "var(--shadow-tool)",
+            border: "1px solid var(--color-border)",
+            position: "relative",
+          }}
+        >
+         
       {/* ── Ticker / Marquee ── */}
       <div
         className="w-full overflow-hidden border-y py-4"
