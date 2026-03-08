@@ -44,7 +44,7 @@ export default function HeroSection() {
         }}
       />
       {/* ── Main hero content ── */}
-      <div className="relative max-w-6xl mx-auto px-6 md:px-12 pt-25 pb-16">
+      <div className="relative max-w-6xl mx-auto px-6 md:px-12 pt-24 pb-16">
 
         {/* Badge */}
         <div className="flex justify-center mb-6 animate-fade-in-up">
