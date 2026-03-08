@@ -44,7 +44,7 @@ export default function HeroSection() {
         }}
       />
       {/* ── Main hero content ── */}
-      <div className="relative max-w-6xl mx-auto px-6 md:px-12 pt-28 pb-16">
+      <div className="relative max-w-6xl mx-auto px-6 md:px-12 pt-32 pb-16">
 
         {/* Badge */}
         <div className="flex justify-center mb-6 animate-fade-in-up">
@@ -64,54 +64,6 @@ export default function HeroSection() {
             Free · No Sign-Up · 100% Private
           </div>
         </div>
-
-           {/* Tool header */}
-          <div className="flex items-center justify-between mb-5">
-            <div className="flex items-center gap-2">
-              {/* Traffic light dots */}
-              {["#EF4444", "#F59E0B", "#10B981"]?.map((c) => (
-                <div
-                  key={c}
-                  className="w-3 h-3 rounded-full"
-                  style={{ background: c, opacity: 0.7 }}
-                />
-              ))}
-              <span
-                className="ml-2 text-xs font-medium"
-                style={{ color: "var(--color-text-light)", fontFamily: "var(--font-body)" }}
-              >
-                CaseConverter Tool
-              </span>
-            </div>
-            <div
-              className="text-xs font-medium px-2.5 py-1 rounded-full"
-              style={{
-                background: "var(--color-primary-light)",
-                color: "var(--color-primary)",
-                fontFamily: "var(--font-body)",
-              }}
-            >
-              ✦ Live preview
-            </div>
-          </div>
-
-          <CaseConverterTool />
-        </div>
-      </div>
-
-        {/* ── The Tool ── */}
-        <div
-          id="converter-tool"
-          className="animate-fade-in-up delay-300"
-          style={{
-            background: "var(--color-surface)",
-            borderRadius: "var(--radius-xl)",
-            padding: "clamp(20px, 4vw, 40px)",
-            boxShadow: "var(--shadow-tool)",
-            border: "1px solid var(--color-border)",
-            position: "relative",
-          }}
-        >
 
         {/* Headline */}
         <div className="text-center mb-5 animate-fade-in-up delay-100">
@@ -149,8 +101,52 @@ export default function HeroSection() {
           lower case, Title Case, camelCase and 6 more — in one click.
         </p>
 
-      
-         
+        {/* ── The Tool ── */}
+        <div
+          id="converter-tool"
+          className="animate-fade-in-up delay-300"
+          style={{
+            background: "var(--color-surface)",
+            borderRadius: "var(--radius-xl)",
+            padding: "clamp(20px, 4vw, 40px)",
+            boxShadow: "var(--shadow-tool)",
+            border: "1px solid var(--color-border)",
+            position: "relative",
+          }}
+        >
+          {/* Tool header */}
+          <div className="flex items-center justify-between mb-5">
+            <div className="flex items-center gap-2">
+              {/* Traffic light dots */}
+              {["#EF4444", "#F59E0B", "#10B981"]?.map((c) => (
+                <div
+                  key={c}
+                  className="w-3 h-3 rounded-full"
+                  style={{ background: c, opacity: 0.7 }}
+                />
+              ))}
+              <span
+                className="ml-2 text-xs font-medium"
+                style={{ color: "var(--color-text-light)", fontFamily: "var(--font-body)" }}
+              >
+                CaseConverter Tool
+              </span>
+            </div>
+            <div
+              className="text-xs font-medium px-2.5 py-1 rounded-full"
+              style={{
+                background: "var(--color-primary-light)",
+                color: "var(--color-primary)",
+                fontFamily: "var(--font-body)",
+              }}
+            >
+              ✦ Live preview
+            </div>
+          </div>
+
+          <CaseConverterTool />
+        </div>
+      </div>
       {/* ── Ticker / Marquee ── */}
       <div
         className="w-full overflow-hidden border-y py-4"
