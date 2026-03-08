@@ -65,43 +65,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Headline */}
-        <div className="text-center mb-5 animate-fade-in-up delay-100">
-          <h1
-            className="font-heading"
-            style={{
-              fontSize: "clamp(38px, 6vw, 68px)",
-              fontWeight: 800,
-              lineHeight: 1.1,
-              letterSpacing: "-0.03em",
-              color: "var(--color-text)",
-            }}
-          >
-            Change Text Case
-            <br />
-            <span
-              style={{
-                background: "linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
-              }}
-            >
-              Instantly
-            </span>
-          </h1>
-        </div>
-
-        {/* Subheadline */}
-        <p
-          className="text-center section-subheading max-w-xl mx-auto mb-12 animate-fade-in-up delay-200"
-          style={{ fontSize: "18px" }}
-        >
-          Paste your text, click a button, done. Convert between UPPER CASE,
-          lower case, Title Case, camelCase and 6 more — in one click.
-        </p>
-
-         {/* Tool header */}
+           {/* Tool header */}
           <div className="flex items-center justify-between mb-5">
             <div className="flex items-center gap-2">
               {/* Traffic light dots */}
@@ -148,6 +112,44 @@ export default function HeroSection() {
             position: "relative",
           }}
         >
+
+        {/* Headline */}
+        <div className="text-center mb-5 animate-fade-in-up delay-100">
+          <h1
+            className="font-heading"
+            style={{
+              fontSize: "clamp(38px, 6vw, 68px)",
+              fontWeight: 800,
+              lineHeight: 1.1,
+              letterSpacing: "-0.03em",
+              color: "var(--color-text)",
+            }}
+          >
+            Change Text Case
+            <br />
+            <span
+              style={{
+                background: "linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+              }}
+            >
+              Instantly
+            </span>
+          </h1>
+        </div>
+
+        {/* Subheadline */}
+        <p
+          className="text-center section-subheading max-w-xl mx-auto mb-12 animate-fade-in-up delay-200"
+          style={{ fontSize: "18px" }}
+        >
+          Paste your text, click a button, done. Convert between UPPER CASE,
+          lower case, Title Case, camelCase and 6 more — in one click.
+        </p>
+
+      
          
       {/* ── Ticker / Marquee ── */}
       <div
